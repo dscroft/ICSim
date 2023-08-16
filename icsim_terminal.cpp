@@ -157,10 +157,10 @@ void display_to_terminal()
             {
                 filler(),
                 text("Rear left "),
-                bgcolor( door_color( door_status[0] ), 
+                bgcolor( door_color( door_status[2] ), 
                          text( door_status[2] ? " Unlocked " : "  Locked  " ) ),
                 filler(),
-                bgcolor( door_color( door_status[1] ), 
+                bgcolor( door_color( door_status[3] ), 
                          text( door_status[3] ? " Unlocked " : "  Locked  " ) ),
                 text(" Rear right"),
                 filler()
