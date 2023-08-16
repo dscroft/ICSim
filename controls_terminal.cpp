@@ -288,8 +288,10 @@ void checkTurn()
 	{
 		if(turning < 0) {
 			signal_state ^= CAN_LEFT_SIGNAL;
+			signal_state &= ~CAN_RIGHT_SIGNAL;
 		} else if(turning > 0) {
 			signal_state ^= CAN_RIGHT_SIGNAL;
+			signal_state &= ~CAN_LEFT_SIGNAL;
 		} else {
 			signal_state = 0;
 		}
